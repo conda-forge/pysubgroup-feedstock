@@ -1,13 +1,13 @@
 {% set name = "pysubgroup" %}
-{% set version = "0.7.7" %}
+{% set version = "2.0.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pysubgroup-{{ version }}.tar.gz
-  sha256: 740a30576d85bc151bd57442ccffb47ef22b71e29f72a12370afc5b9fce72e8d
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/pysubgroup-{{ version }}.tar.gz
+  sha256: 4af6bb97cf2bd795a02b81d7b691e8afc8f09f7b1c7067c6c61f14130b6681bb
 
 build:
   script: {{ PYTHON }} -m pip install . -vv
